@@ -1,4 +1,4 @@
-FROM node:25-alpine3.23@sha256:b9b5737eabd423ba73b21fe2e82332c0656d571daf1ebf19b0f89d0dd0d3ca93
+FROM node:25-alpine3.23@sha256:18e02657e2a2cc3a87210ee421e9769ff28a1ac824865d64f74d6d2d59f74b6b
 RUN apk add --no-cache bash>5.0.16-r0 git>2.26.0-r0 curl
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

@@ -7,6 +7,9 @@ UPSTREAM="gaurav-nelson/github-action-markdown-link-check"
 ACTION_REPO="${GITHUB_ACTION_REPOSITORY:-}"
 DOCS_URL="https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions"
 
+# determine repo visibility from the GitHub event payload
+REPO_PRIVATE=$(jq -r '.repository.private | tostring' "$GITHUB_EVENT_PATH" 2>/dev/null || echo "")
+
 echo ""
 echo -e "\033[1;36mStepSecurity Maintained Action\033[0m"
 echo "Secure drop-in replacement for $UPSTREAM"

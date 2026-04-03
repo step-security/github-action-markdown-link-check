@@ -55,5 +55,3 @@ runs:
     - ${{ inputs.base-branch }}
     - ${{ inputs.file-extension }}
     - ${{ inputs.file-path }}
-  env:
-    REPO_PRIVATE: ${{ github.event.repository.private }}

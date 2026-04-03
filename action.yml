@@ -44,7 +44,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/step-security/github-action-markdown-link-check:v1.0.18@sha256:aa19375b475db47b6204897e5ed6b1cca5bc51e68b9d4cfc01178771719ba5d3' #v1.0.18
   args:
     - ${{ inputs.use-quiet-mode }}
     - ${{ inputs.use-verbose-mode }}

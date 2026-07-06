@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": true,
+   "maintained_action_name": "step-security/github-action-markdown-link-check",
+   "upstream_full_repo_name": "gaurav-nelson/github-action-markdown-link-check",
+   "action_type": "docker",
+   "last_release": {
+     "tag_name": "v1.0.19",
+     "created_at": "2026-04-03T07:15:35Z",
+     "published_at": "2026-04-07T03:49:37Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
